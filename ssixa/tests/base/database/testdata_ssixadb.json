@@ -1,0 +1,24 @@
+{
+  "statistics" :{
+    "0": {
+      "name": "challenge created1",
+      "value": "test ssi",
+      "application": "app"
+    },
+    "1": {
+      "name": "challenge created2",
+      "value": "test ssi",
+      "application": "app"
+    },
+    "2": {
+      "name": "challenge created3",
+      "value": "test ssi",
+      "application": "app"
+    },
+    "3": {
+      "name": "challenge created4",
+      "value": "test ssi",
+      "application": "app"
+    }
+  }
+}

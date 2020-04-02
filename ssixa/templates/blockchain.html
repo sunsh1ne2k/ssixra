@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %} Self-sovereign Identity Login {% end %}
+
+{% block script %} <script src="{{ static_url('js/blockchain.js') }}"> </script> {% end %}
+
+{% block page %}
+
+{% if client_name != '' %}
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-10 align-content-center">
+        <h5 class="my-3">Redirected from: {{ client_name }}</h5>
+    </div>
+    <div class="col-sm-2"></div>
+</div>
+{% end %}
+
+<div class="row">
+    <div class="col-sm-6">
+        <div class="row">
+            <h3 class="my-3">Select SSI Solution.</h3>
+        </div>
+
+            {% for n in solutions %}
+            <div class="row">
+                <div class="ssi-option">
+                    <button class="pure-button {% if n == ssi %} pure-button-active {% end %}" onclick="changeSSI('{{ n }}');">{{ n }}</button>
+                </div>
+            </div>
+            {% end %}
+    </div>
+
+    <div class="col-sm-6">
+        <div class="row">
+            <h3 class="my-3">Scan QR Code to Sign in.</h3>
+        </div>
+        <div class="row">
+            <div align="center">
+                <label hidden id="url">{{ url }}</label>
+                <form action="{{ action_verify }}" method="post">
+                    <label for="qrcode">{% raw qrcode %}</label>
+                    <input type="hidden" id="random" name="random" value="{{ rand }}">
+                    <input type="hidden" id="key" name="key" value="{{ key }}">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% end %}

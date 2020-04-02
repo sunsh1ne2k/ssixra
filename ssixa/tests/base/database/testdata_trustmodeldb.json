@@ -1,0 +1,34 @@
+{
+  "attributes":[
+    {"name": "name", "acceptance": "0.9"},
+    {"name": "firstname", "acceptance": "0.9"},
+    {"name": "lastname", "acceptance": "0.9"},
+    {"name": "age", "acceptance": "0.9"},
+    {"name": "address", "acceptance": "0.9"},
+    {"name": "haircolor", "acceptance": "0.9"}
+  ],
+  "providers": [
+    {"name":  "testprovider0", "correctness": "0.2", "validity": "0.5", "factor": "0.7"},
+    {"name":  "testprovider1", "correctness": "0.1", "validity": "0.5", "factor": "0.8"},
+    {"name":  "testprovider2", "correctness": "0.4", "validity": "0.5", "factor": "0.9"},
+    {"name":  "testprovider3", "correctness": "0.5", "validity": "0.5", "factor": "0.4"},
+    {"name":  "testprovider4", "correctness": "0.6", "validity": "0.5", "factor": "0.3"},
+    {"name":  "testprovider5", "correctness": "0.1", "validity": "0.5", "factor": "0.2"}
+  ],
+  "providerstoattribute": [
+    {"provider": "testprovider0", "attribute": "name", "correctness": "", "validity": ""},
+    {"provider": "testprovider0", "attribute": "firstname", "correctness": "0.4", "validity": "0.5"},
+    {"provider": "testprovider0", "attribute": "lastname", "correctness": "", "validity": ""},
+    {"provider": "testprovider3", "attribute": "age", "correctness": "", "validity": ""},
+    {"provider": "testprovider4", "attribute": "address", "correctness": "0.5", "validity": "0.9"},
+    {"provider": "testprovider5", "attribute": "haircolor", "correctness": "", "validity": ""}
+  ],
+  "providerstodid": [
+    {"provider": "testprovider0", "did":  "dskfjapdjped"},
+    {"provider": "testprovider0", "did":  "10394i123jknd"},
+    {"provider": "testprovider0", "did":  "12091231212dwer"},
+    {"provider": "testprovider1", "did":  "123123123dasaq"},
+    {"provider": "testprovider2", "did":  "123123123"},
+    {"provider": "testprovider3", "did":  "3ß4sdkjasdaposdkaqpwew"}
+  ]
+}

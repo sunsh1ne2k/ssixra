@@ -1,0 +1,18 @@
+wheel
+pyyaml
+future
+oic
+pyqrcode
+web3
+pyjwt
+tornado==5.1
+sqlalchemy
+psycopg2-binary
+ldap3
+base58
+<<<<<<< HEAD
+pysaml2
+tornado-swagger
+=======
+indy-sdk
+>>>>>>> Lissi_integration

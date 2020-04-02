@@ -1,0 +1,43 @@
+{
+  "create_challenge": {
+    "0": {
+      "callback": "https://callback1",
+      "claims": [
+        "firstname",
+        "lastname",
+        "email"
+      ]
+    },
+    "1": {
+      "callback": "https://callback2",
+      "claims": [
+        "firstname"
+      ]
+    },
+    "2": {
+      "callback": "https://callback3",
+      "claims": [
+        "email",
+        "name"
+      ]
+    }
+  },
+  "verify_challenge": [{
+    "verified": [],
+    "unverified": ["firstname","lastname"],
+    "token": "{\"interactionToken\": {\"suppliedCredentials\": [{\"@context\": [{\"id\": \"@id\", \"type\": \"@type\", \"cred\": \"https://w3id.org/credentials#\", \"schema\": \"http://schema.org/\", \"dc\": \"http://purl.org/dc/terms/\", \"xsd\": \"http://www.w3.org/2001/XMLSchema#\", \"sec\": \"https://w3id.org/security#\", \"Credential\": \"cred:Credential\", \"issuer\": {\"@id\": \"cred:issuer\", \"@type\": \"@id\"}, \"issued\": {\"@id\": \"cred:issued\", \"@type\": \"xsd:dateTime\"}, \"claim\": {\"@id\": \"cred:claim\", \"@type\": \"@id\"}, \"credential\": {\"@id\": \"cred:credential\", \"@type\": \"@id\"}, \"expires\": {\"@id\": \"sec:expiration\", \"@type\": \"xsd:dateTime\"}, \"proof\": {\"@id\": \"sec:proof\", \"@type\": \"@id\"}, \"EcdsaKoblitzSignature2016\": \"sec:EcdsaKoblitzSignature2016\", \"created\": {\"@id\": \"dc:created\", \"@type\": \"xsd:dateTime\"}, \"creator\": {\"@id\": \"dc:creator\", \"@type\": \"@id\"}, \"domain\": \"sec:domain\", \"nonce\": \"sec:nonce\", \"signatureValue\": \"sec:signatureValue\"}, {\"ProofOfNameCredential\": \"https://identity.jolocom.com/terms/ProofOfNameCredential\", \"schema\": \"http://schema.org/\", \"familyName\": \"schema:familyName\", \"givenName\": \"schema:givenName\"}], \"id\": \"claimId:9bbf5c8f712768\", \"issuer\": \"did:jolo:3a6c493a51bd388534a9446596b1e149b64489b61bd98cb451abf05613275aed\", \"issued\": \"2019-11-15T20:47:06.108Z\", \"type\": [\"Credential\", \"ProofOfNameCredential\"], \"expires\": \"2020-11-15T20:47:06.108Z\", \"proof\": {\"created\": \"2019-11-15T20:47:06.104Z\", \"type\": \"EcdsaKoblitzSignature2016\", \"nonce\": \"9c4d3e41fa6ffc87\", \"signatureValue\": \"ba02bf726656374e3118d586f0de2b8890a14180f4649ba24d9d768c1d3802dd73ea025c0dd19b809a659df4af1d32bdeec5d09ecd954f24ddc220bf9e0fe257\", \"creator\": \"did:jolo:3a6c493a51bd388534a9446596b1e149b64489b61bd98cb451abf05613275aed#keys-1\"}, \"claim\": {\"id\": \"did:jolo:3a6c493a51bd388534a9446596b1e149b64489b61bd98cb451abf05613275aed\", \"familyName\": \"Test\", \"givenName\": \"Andreas\"}, \"name\": \"Name\"}], \"callbackURL\": \"http://192.168.0.206:1800/blockchain/verificationside/hNCm49AsQQ6Y4eUTk\"}, \"typ\": \"credentialResponse\", \"iat\": 1573852718406, \"exp\": 1573856318406, \"iss\": \"did:jolo:3a6c493a51bd388534a9446596b1e149b64489b61bd98cb451abf05613275aed#keys-1\", \"aud\": \"did:jolo:3c790345d3ecd01ca0a4a56dc0fefab341d5d2138f0b7c5d78a1ef531a1c6ba9\", \"jti\": \"8f887e3675014\"}"
+  },{
+    "verified": ["firstname","lastname"],
+    "unverified": [],
+    "token": "{\"interactionToken\": {\"suppliedCredentials\": [{\"@context\": [{\"id\": \"@id\", \"type\": \"@type\", \"cred\": \"https://w3id.org/credentials#\", \"schema\": \"http://schema.org/\", \"dc\": \"http://purl.org/dc/terms/\", \"xsd\": \"http://www.w3.org/2001/XMLSchema#\", \"sec\": \"https://w3id.org/security#\", \"Credential\": \"cred:Credential\", \"issuer\": {\"@id\": \"cred:issuer\", \"@type\": \"@id\"}, \"issued\": {\"@id\": \"cred:issued\", \"@type\": \"xsd:dateTime\"}, \"claim\": {\"@id\": \"cred:claim\", \"@type\": \"@id\"}, \"credential\": {\"@id\": \"cred:credential\", \"@type\": \"@id\"}, \"expires\": {\"@id\": \"sec:expiration\", \"@type\": \"xsd:dateTime\"}, \"proof\": {\"@id\": \"sec:proof\", \"@type\": \"@id\"}, \"EcdsaKoblitzSignature2016\": \"sec:EcdsaKoblitzSignature2016\", \"created\": {\"@id\": \"dc:created\", \"@type\": \"xsd:dateTime\"}, \"creator\": {\"@id\": \"dc:creator\", \"@type\": \"@id\"}, \"domain\": \"sec:domain\", \"nonce\": \"sec:nonce\", \"signatureValue\": \"sec:signatureValue\"}, {\"ProofOfNameCredential\": \"https://identity.jolocom.com/terms/ProofOfNameCredential\", \"schema\": \"http://schema.org/\", \"familyName\": \"schema:familyName\", \"givenName\": \"schema:givenName\"}], \"id\": \"claimId:9bbf5c8f712768\", \"issuer\": \"did:jolo:aa5108d798411b90d3c7f4615e82eeb72b86d0a842deea243f6e742a0317c506\", \"issued\": \"2019-11-15T20:47:06.108Z\", \"type\": [\"Credential\", \"ProofOfNameCredential\"], \"expires\": \"2020-11-15T20:47:06.108Z\", \"proof\": {\"created\": \"2019-11-15T20:47:06.104Z\", \"type\": \"EcdsaKoblitzSignature2016\", \"nonce\": \"9c4d3e41fa6ffc87\", \"signatureValue\": \"ba02bf726656374e3118d586f0de2b8890a14180f4649ba24d9d768c1d3802dd73ea025c0dd19b809a659df4af1d32bdeec5d09ecd954f24ddc220bf9e0fe257\", \"creator\": \"did:jolo:aa5108d798411b90d3c7f4615e82eeb72b86d0a842deea243f6e742a0317c506#keys-1\"}, \"claim\": {\"id\": \"did:jolo:3a6c493a51bd388534a9446596b1e149b64489b61bd98cb451abf05613275aed\", \"familyName\": \"Test\", \"givenName\": \"Andreas\"}, \"name\": \"Name\"}], \"callbackURL\": \"http://192.168.0.206:1800/blockchain/verificationside/hNCm49AsQQ6Y4eUTk\"}, \"typ\": \"credentialResponse\", \"iat\": 1573852718406, \"exp\": 1573856318406, \"iss\": \"did:jolo:3a6c493a51bd388534a9446596b1e149b64489b61bd98cb451abf05613275aed#keys-1\", \"aud\": \"did:jolo:3c790345d3ecd01ca0a4a56dc0fefab341d5d2138f0b7c5d78a1ef531a1c6ba9\", \"jti\": \"8f887e3675014\"}"
+  }],
+    "create_attestedclaim": [{
+      "subject": "did:ethr:1",
+      "name": "email",
+      "value": "test@test.de"
+    },{
+      "subject": "did:ethr:",
+      "name": "firstname",
+      "value": "thomas"
+    }]
+}

@@ -1,0 +1,26 @@
+{
+  "09130192321023912312": {
+    "name": "testuser",
+    "firstname": "test",
+    "lastname": "user",
+    "age": "20",
+    "address": "100 Plainwright road",
+    "haircolor": "blond"
+  },
+    "09131023912312321023912312": {
+    "name": "testuser2",
+    "firstname": "test2",
+    "lastname": "user2",
+    "age": "20",
+    "address": "100 Plainwright road",
+    "haircolor": "blond"
+  },
+    "09130192321093102931212312": {
+    "name": "testuser3",
+    "firstname": "test3",
+    "lastname": "user3",
+    "age": "20",
+    "address": "100 Plainwright road",
+    "haircolor": "blond"
+  }
+}

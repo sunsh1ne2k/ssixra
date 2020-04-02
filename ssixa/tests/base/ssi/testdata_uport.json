@@ -1,0 +1,38 @@
+{
+  "create_challenge": {
+    "0": {
+      "callback": "https://callback1",
+      "claims": ["firstname","lastname","email","age"]
+    },
+    "1": {
+      "callback": "https://callback2",
+      "claims": ["firstname"]
+    },
+    "2": {
+      "callback": "https://callback3",
+      "claims": ["email","age"]
+    }
+  },
+  "verify_challenge": [{
+    "verified": ["email"],
+    "unverified": ["email","name"],
+    "token": "{\"jwt\":{\"did\":\"did:ethr:0x1c11d00ca2440e56cf6c49f49bbf4fce926f0c79\",\"boxPub\":\"mjW2W3lSP6lN4FD8BOcFs/EpFAWvlSOd2Obq9sD+814=\",\"email\":\"Andreas.Gruener@web.de\",\"name\":\"Andreas\",\"mnid\":\"2oo5wpWqjsWrczVrBUFgsDUwUN4kPf825Sd\",\"address\":\"0x6ffbf03c8dbedc86a0014f44a3f28b4a962d99df\",\"pushToken\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NkstUiJ9.eyJpYXQiOjE1NzM4MzQzNzgsImV4cCI6MTYwNTM3MDM3OCwiYXVkIjoiZGlkOmV0aHI6MHgzNDY5YWNiYWRkM2YzM2U4NGExNWM4OTRhYTU1MzZhNGFmMjQzYjEyIiwidHlwZSI6Im5vdGlmaWNhdGlvbnMiLCJ2YWx1ZSI6ImFybjphd3M6c25zOnVzLXdlc3QtMjoxMTMxOTYyMTY1NTg6ZW5kcG9pbnQvQVBOUy91UG9ydC8wZWM2MGYxNS1kYTg2LTM2YzEtOTkyZi1kMTQzYTVkYTM0ZDkiLCJpc3MiOiJkaWQ6ZXRocjoweDFjMTFkMDBjYTI0NDBlNTZjZjZjNDlmNDliYmY0ZmNlOTI2ZjBjNzkifQ.oBXyvqjMCRyE8jsaFnvt4X7mEzXEFcRUW7HWfpiETjA45-zx9leVX4Gv3U1Qg9AZR86z0JCn19KXlzqUJ7gVAAA\",\"verified\":[{\"iat\":1560525687,\"sub\":\"did:ethr:0x1c11d00ca2440e56cf6c49f49bbf4fce926f0c79\",\"claim\":{\"email\":\"Andreas.Gruener@web.de\"},\"iss\":\"did:ethr:0x3469acbadd3f33e84a15c894aa5536a4af243b12\",\"jwt\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NkstUiJ9.eyJpYXQiOjE1NjA1MjU2ODcsInN1YiI6ImRpZDpldGhyOjB4MWMxMWQwMGNhMjQ0MGU1NmNmNmM0OWY0OWJiZjRmY2U5MjZmMGM3OSIsImNsYWltIjp7ImVtYWlsIjoiQW5kcmVhcy5HcnVlbmVyQHdlYi5kZSJ9LCJpc3MiOiJkaWQ6ZXRocjoweDM0NjlhY2JhZGQzZjMzZTg0YTE1Yzg5NGFhNTUzNmE0YWYyNDNiMTIifQ.VLQGhY5lv1t6YgX3c1AQQwjN5AtXPcFazeWGgm3BfSCm4InGp6zUiR9G1Lyua_X7yGewP65Ng2ZjLVs70Ha4dwA\"}],\"invalid\":[]}}"
+  },{
+    "verified": [],
+    "unverified": ["email","name"],
+    "token": "{\"jwt\":{\"did\":\"did:ethr:0x1c11d00ca2440e56cf6c49f49bbf4fce926f0c79\",\"boxPub\":\"mjW2W3lSP6lN4FD8BOcFs/EpFAWvlSOd2Obq9sD+814=\",\"email\":\"Andreas.Gruener@web.de\",\"name\":\"Andreas\",\"mnid\":\"2oo5wpWqjsWrczVrBUFgsDUwUN4kPf825Sd\",\"address\":\"0x6ffbf03c8dbedc86a0014f44a3f28b4a962d99df\",\"pushToken\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NkstUiJ9.eyJpYXQiOjE1NzM4MzQzNzgsImV4cCI6MTYwNTM3MDM3OCwiYXVkIjoiZGlkOmV0aHI6MHgzNDY5YWNiYWRkM2YzM2U4NGExNWM4OTRhYTU1MzZhNGFmMjQzYjEyIiwidHlwZSI6Im5vdGlmaWNhdGlvbnMiLCJ2YWx1ZSI6ImFybjphd3M6c25zOnVzLXdlc3QtMjoxMTMxOTYyMTY1NTg6ZW5kcG9pbnQvQVBOUy91UG9ydC8wZWM2MGYxNS1kYTg2LTM2YzEtOTkyZi1kMTQzYTVkYTM0ZDkiLCJpc3MiOiJkaWQ6ZXRocjoweDFjMTFkMDBjYTI0NDBlNTZjZjZjNDlmNDliYmY0ZmNlOTI2ZjBjNzkifQ.oBXyvqjMCRyE8jsaFnvt4X7mEzXEFcRUW7HWfpiETjA45-zx9leVX4Gv3U1Qg9AZR86z0JCn19KXlzqUJ7gVAAA\",\"invalid\":[]}}"
+  },{
+    "verified": ["email"],
+    "unverified": [],
+    "token": "{\"jwt\":{\"did\":\"did:ethr:0x1c11d00ca2440e56cf6c49f49bbf4fce926f0c79\",\"boxPub\":\"mjW2W3lSP6lN4FD8BOcFs/EpFAWvlSOd2Obq9sD+814=\",\"mnid\":\"2oo5wpWqjsWrczVrBUFgsDUwUN4kPf825Sd\",\"address\":\"0x6ffbf03c8dbedc86a0014f44a3f28b4a962d99df\",\"pushToken\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NkstUiJ9.eyJpYXQiOjE1NzM4MzQzNzgsImV4cCI6MTYwNTM3MDM3OCwiYXVkIjoiZGlkOmV0aHI6MHgzNDY5YWNiYWRkM2YzM2U4NGExNWM4OTRhYTU1MzZhNGFmMjQzYjEyIiwidHlwZSI6Im5vdGlmaWNhdGlvbnMiLCJ2YWx1ZSI6ImFybjphd3M6c25zOnVzLXdlc3QtMjoxMTMxOTYyMTY1NTg6ZW5kcG9pbnQvQVBOUy91UG9ydC8wZWM2MGYxNS1kYTg2LTM2YzEtOTkyZi1kMTQzYTVkYTM0ZDkiLCJpc3MiOiJkaWQ6ZXRocjoweDFjMTFkMDBjYTI0NDBlNTZjZjZjNDlmNDliYmY0ZmNlOTI2ZjBjNzkifQ.oBXyvqjMCRyE8jsaFnvt4X7mEzXEFcRUW7HWfpiETjA45-zx9leVX4Gv3U1Qg9AZR86z0JCn19KXlzqUJ7gVAAA\",\"verified\":[{\"iat\":1560525687,\"sub\":\"did:ethr:0x1c11d00ca2440e56cf6c49f49bbf4fce926f0c79\",\"claim\":{\"email\":\"Andreas.Gruener@web.de\"},\"iss\":\"did:ethr:0x3469acbadd3f33e84a15c894aa5536a4af243b12\",\"jwt\":\"eyJ0eXAiOiJKV1QiLCJhbGciOiJFUzI1NkstUiJ9.eyJpYXQiOjE1NjA1MjU2ODcsInN1YiI6ImRpZDpldGhyOjB4MWMxMWQwMGNhMjQ0MGU1NmNmNmM0OWY0OWJiZjRmY2U5MjZmMGM3OSIsImNsYWltIjp7ImVtYWlsIjoiQW5kcmVhcy5HcnVlbmVyQHdlYi5kZSJ9LCJpc3MiOiJkaWQ6ZXRocjoweDM0NjlhY2JhZGQzZjMzZTg0YTE1Yzg5NGFhNTUzNmE0YWYyNDNiMTIifQ.VLQGhY5lv1t6YgX3c1AQQwjN5AtXPcFazeWGgm3BfSCm4InGp6zUiR9G1Lyua_X7yGewP65Ng2ZjLVs70Ha4dwA\"}],\"invalid\":[]}}"
+  }],
+    "create_attestedclaim": [{
+      "subject": "did:ethr:1",
+      "name": "email",
+      "value": "test@test.de"
+    },{
+      "subject": "did:ethr:",
+      "name": "firstname",
+      "value": "thomas"
+    }]
+}

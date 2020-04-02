@@ -1,0 +1,92 @@
+body {
+  padding-top: 0px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 0px;
+  }
+}
+
+.cl-hpi-red {
+  color: #b00c36;
+}
+
+.bg-hpi {
+  background-color: #DD6108 !important;
+}
+
+.bg-lightgrey {
+  background-color: #EEEEEE !important;
+}
+
+a.bg-hpi:hover, a.bg-hpi:focus,
+button.bg-hpi:hover,
+button.bg-hpi:focus {
+  background-color: #1d2124 !important;
+}
+
+.page-frame {
+  max-width: 800px;
+}
+
+.img-padding {
+  padding: 15px;
+}
+
+.footer-nav-item {
+  color: rgba(255,255,255,.5);
+  text-decoration: none !important;
+}
+
+.footer-nav-item:hover {
+  color: rgba(255,255,255,.75);
+  text-decoration: none !important;
+}
+
+.footer-nav-item-active {
+  color: rgba(255,255,255,1);
+  text-decoration: none !important;
+}
+
+.ssi-option {
+  padding: 5px;
+}
+
+.ssixa-info {
+  padding-left: 5px;
+}
+
+.ssixa-error {
+  background-color: rgba(255,0,0,0.5);
+}
+
+.ssixa-success {
+  background-color: rgba(0,102,0,0.5);
+}
+
+.navbar {
+  padding-bottom:0px;
+  padding-top: 0px;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.mainframe-padding {
+  padding-bottom: 40px;
+}
+
+.mainframe-top-padding {
+  padding-top: 40px;
+}
+
+.paragraph-top-padding {
+  padding-top: 15px;
+}
+
+

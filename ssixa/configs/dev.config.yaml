@@ -1,0 +1,59 @@
+!!python/object:ssixa.settings.Settings
+settings:
+  authmethodcfg:
+    default: uport
+    jolocom: {appid: '', passphrase: '', proxy_url: '', seed: ''}
+    lissi: {acapy_admin_url: '', acapy_inbound_url: '', cred_def_id: '', did: '',
+      did_autocreate: true, schema_id: '', schema_version: ''}
+    uport: {appid: '', appname: '', key: '', proxy_url: ''}
+  certificate: {certname: '', keyname: '', password: ''}
+  cookie_secret: ''
+  db: {database: '', password: '', port: '', server: '', user: ''}
+  debug: true
+  environment: dev
+  loglevel: debug
+  oidc_config:
+    code_ttl: 2
+    jwks:
+      keys:
+      - name: ''
+        password: ''
+        type: ''
+        use: [enc, sig]
+      name: ''
+    token_lifetime: 3600
+    token_password: ''
+    token_refresh_time: 21600
+    token_secret: ''
+    verify_client: false
+    verify_ssl: false
+  protocol: http
+  proxymode: false
+  saml_config:
+    cert_file: ''
+    debug: 1
+    default_claims: [email, name]
+    description: ''
+    entityid: ''
+    key_file: ''
+    metadata:
+      local: []
+    service:
+      idp:
+        name: ''
+        policy:
+          default:
+            attribute_restrictions: null
+            lifetime: {minutes: 15}
+    sign_response: false
+    valid_for: 2000
+    verify_ssl_cert: false
+  static_path: static
+  template_path: templates
+  url: ''
+  verifier_config:
+    emailverification: {debug: true, fromAddress: '', password: '', port: '', server: '',
+      username: ''}
+    ldapverification: {basedn: '', port: '', protocol: '', server: ''}
+  verify_ssl: false
+  xsrf_cookies: false

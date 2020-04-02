@@ -1,0 +1,50 @@
+{
+  "tmattribute": {
+    "0": {
+      "name": "lastname",
+      "acceptance": "0.9"
+    },
+    "1": {
+      "name": "firstname",
+      "acceptance": "0.8"
+    },
+    "2": {
+      "name": "age",
+      "acceptance": "0.9"
+    }
+  },
+  "tmprovider": {
+    "0": {
+      "name": "provider1",
+      "validity": "0.3",
+      "correctness": "0.5",
+      "factor": "0.9",
+      "attributes": [],
+      "dids": []
+    },
+    "1": {
+      "name": "provider2",
+      "validity": "0.3",
+      "correctness": "0.5",
+      "factor": "0.9",
+      "attributes": [],
+      "dids": []
+    },
+    "2": {
+      "name": "provider2",
+      "validity": "0.3",
+      "correctness": "0.5",
+      "factor": "0.9",
+      "attributes": [],
+      "dids": []
+    },
+    "3": {
+      "name": "provider3",
+      "validity": "0.3",
+      "correctness": "0.5",
+      "factor": "0.9",
+      "attributes": [],
+      "dids": []
+    }
+  }
+}
