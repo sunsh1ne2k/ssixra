@@ -1,5 +1,5 @@
-from ssixa.handlers.base import BaseHandler, BaseWebSocketHandler
-from ssixa.base.utils import sanitize
+from handlers.base import BaseHandler, BaseWebSocketHandler
+from base.utils import sanitize
 
 from saml2.s_utils import rndstr
 

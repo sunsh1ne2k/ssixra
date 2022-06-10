@@ -23,10 +23,10 @@ from oic.oic.message import OpenIDRequest
 from oic.utils.http_util import Response
 from oic.utils.http_util import SeeOther
 
-from ssixa.base.database.clientdb import ClientDB
-from ssixa.base.database.userinfodb import UserInfoDB
-from ssixa.base.database.sessiondb import SessionDB
-from ssixa.base.blockchain import BlockchainAuthMethod
+from base.database.clientdb import ClientDB
+from base.database.userinfodb import UserInfoDB
+from base.database.sessiondb import SessionDB
+from base.blockchain import BlockchainAuthMethod
 
 import base64
 import logging

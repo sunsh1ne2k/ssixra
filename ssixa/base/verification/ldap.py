@@ -1,4 +1,4 @@
-from ssixa.base.verification.verificationbase import VerificationMethodBase, RequiredClaimMissingException
+from base.verification.verificationbase import VerificationMethodBase, RequiredClaimMissingException
 from oic.oic import rndstr
 
 import ldap3

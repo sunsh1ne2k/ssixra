@@ -1,5 +1,5 @@
-from ssixa.base.database.basedb import SSIXADBBase
-from ssixa.base.database.basedbobject import BaseStatistic
+from base.database.basedb import SSIXADBBase
+from base.database.basedbobject import BaseStatistic
 
 import logging
 log = logging.getLogger(__name__)

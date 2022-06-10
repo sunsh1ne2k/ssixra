@@ -1,6 +1,6 @@
-from ssixa.handlers.base import BaseHandler
-from ssixa.base.utils import sanitize
-from ssixa.base.ssi.jolocom import Jolocom
+from handlers.base import BaseHandler
+from base.utils import sanitize
+from base.ssi.jolocom import Jolocom
 
 import tornado
 import pyqrcode

@@ -1,6 +1,6 @@
-from ssixa.base.ssi.ssibase import BaseSSI
+from base.ssi.ssibase import BaseSSI
 from oic.oic import rndstr
-from ssixa.trust.trust import TMAttribute, TMProvider
+from trust.trust import TMAttribute, TMProvider
 
 import requests
 import json

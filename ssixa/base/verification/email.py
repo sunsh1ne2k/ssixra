@@ -1,4 +1,4 @@
-from ssixa.base.verification.verificationbase import VerificationMethodBase
+from base.verification.verificationbase import VerificationMethodBase
 from oic.oic import rndstr
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart

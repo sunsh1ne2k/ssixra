@@ -5,25 +5,26 @@ from tornado.template import Loader
 from functools import partial
 from tornado_swagger.setup import setup_swagger
 
-from ssixa.base.database.ssixadb import StatisticsLoggerDB
-from ssixa.settings import Settings, LogSettings
-from ssixa.urls import url_patterns, nonprod_url_patterns
-from ssixa.base.oidcprovider import SSIXAOIDCProvider
-from ssixa.base.samlprovider import SSIXASAMLProvider
-from ssixa.base.verification.verificationbase import VerificationMethodManager
-from ssixa.trust.trust import SimpleTrustModel, AttributeAggregationTrustModel
-from ssixa.base.database.basedb import SSIXASQLBaseDB
-from ssixa.base.database.ssixadb import SSIXADB
-from ssixa import version as ver
+# from base.database.ssixadb import StatisticsLoggerDB
+from base.database.ssixadb import StatisticsLoggerDB
+from settings import Settings, LogSettings
+from urls import url_patterns, nonprod_url_patterns
+from base.oidcprovider import SSIXAOIDCProvider
+from base.samlprovider import SSIXASAMLProvider
+from base.verification.verificationbase import VerificationMethodManager
+from trust.trust import SimpleTrustModel, AttributeAggregationTrustModel
+from base.database.basedb import SSIXASQLBaseDB
+from base.database.ssixadb import SSIXADB
+# from . import version as ver
 
 # Verification modules
-from ssixa.base.verification.email import SimpleEmailVerification
-from ssixa.base.verification.ldap import LDAPVerification
+from base.verification.email import SimpleEmailVerification
+from base.verification.ldap import LDAPVerification
 
 # UI Modules
-from ssixa.handlers.modules.header import HeaderModule
-from ssixa.handlers.modules.menu import MenuModule
-from ssixa.handlers.modules.footer import FooterModule
+from handlers.modules.header import HeaderModule
+from handlers.modules.menu import MenuModule
+from handlers.modules.footer import FooterModule
 
 import signal
 import atexit

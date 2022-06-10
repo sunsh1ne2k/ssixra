@@ -1,7 +1,7 @@
-from ssixa.handlers.base import BaseHandler, BaseWebSocketHandler
-from ssixa.base.oidcprovider import SSIXAOIDCProvider
-from ssixa.base.database.oidcdbobject import OIDCClient
-from ssixa.base.utils import sanitize
+from handlers.base import BaseHandler, BaseWebSocketHandler
+from base.oidcprovider import SSIXAOIDCProvider
+from base.database.oidcdbobject import OIDCClient
+from base.utils import sanitize
 
 import pyqrcode
 import io

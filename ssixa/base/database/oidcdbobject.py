@@ -1,4 +1,4 @@
-from ssixa.base.database import SSIXASQLBaseDBBase
+from base.database import SSIXASQLBaseDBBase
 
 from sqlalchemy.orm import relationship
 from sqlalchemy import Column, String, Integer, Date, Table, ForeignKey, UniqueConstraint, Boolean

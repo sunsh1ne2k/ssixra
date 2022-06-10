@@ -1,6 +1,6 @@
-from ssixa.base.database.basedb import SSIXADBBase
-from ssixa.base.database.oidcdbobject import OIDCSession, OIDCUidToSid
-from ssixa.base.database.uid2siddb import UidToSidDB
+from base.database.basedb import SSIXADBBase
+from base.database.oidcdbobject import OIDCSession, OIDCUidToSid
+from base.database.uid2siddb import UidToSidDB
 
 from oic.utils.sdb import SessionDB as SessionDBBase
 

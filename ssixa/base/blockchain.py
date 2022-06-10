@@ -1,9 +1,9 @@
 from oic.utils.authn.user import UserAuthnMethod as OIDCUserAuthnMethod
 from saml2.authn import UserAuthnMethod as SAMLUserAuthnMethod
 from oic.utils.http_util import Redirect
-from ssixa.base.ssi.uport import UPort
-from ssixa.base.ssi.jolocom import Jolocom
-from ssixa.base.ssi.lissi import Lissi
+from base.ssi.uport import UPort
+from base.ssi.jolocom import Jolocom
+from base.ssi.lissi import Lissi
 
 import datetime
 import json

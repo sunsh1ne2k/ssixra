@@ -1,6 +1,6 @@
 from oic.utils.clientdb import BaseClientDatabase
-from ssixa.base.database.basedb import SSIXADBBase
-from ssixa.base.database.oidcdbobject import OIDCClient
+from base.database.basedb import SSIXADBBase
+from base.database.oidcdbobject import OIDCClient
 
 import logging
 

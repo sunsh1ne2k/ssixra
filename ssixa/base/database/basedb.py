@@ -1,5 +1,5 @@
-from ssixa.base.database.basedbobject import BaseStatistic
-from ssixa.base.database import SSIXASQLBaseDBBase
+from base.database.basedbobject import BaseStatistic
+from base.database import SSIXASQLBaseDBBase
 
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker

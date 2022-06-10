@@ -1,4 +1,4 @@
-from ssixa.handlers.base import BaseHandler
+from handlers.base import BaseHandler
 
 from urllib.parse import parse_qs
 from saml2.httputil import BadRequest

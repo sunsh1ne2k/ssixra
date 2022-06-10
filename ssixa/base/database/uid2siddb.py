@@ -1,5 +1,5 @@
-from ssixa.base.database.basedb import SSIXADBBase
-from ssixa.base.database.oidcdbobject import OIDCUidToSid
+from base.database.basedb import SSIXADBBase
+from base.database.oidcdbobject import OIDCUidToSid
 
 import logging
 log = logging.getLogger(__name__)

@@ -1,6 +1,6 @@
-from ssixa.base.ssi.ssibase import BaseSSI
-from ssixa.trust.trust import TMAttribute, TMProvider
-from ssixa.base.ssi.wsconnector import WSConnector
+from base.ssi.ssibase import BaseSSI
+from trust.trust import TMAttribute, TMProvider
+from base.ssi.wsconnector import WSConnector
 from oic.oic import rndstr
 
 import jwt

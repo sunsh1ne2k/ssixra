@@ -1,5 +1,5 @@
 from sqlalchemy import and_
-from ssixa.base.database.tmdbobject import TMProvider, TMAttribute, TMDID
+from base.database.tmdbobject import TMProvider, TMAttribute, TMDID
 
 import logging
 

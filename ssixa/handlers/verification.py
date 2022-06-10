@@ -1,5 +1,5 @@
-from ssixa.handlers.base import BaseHandler
-from ssixa.base.utils import sanitize
+from handlers.base import BaseHandler
+from base.utils import sanitize
 
 import logging
 import tornado

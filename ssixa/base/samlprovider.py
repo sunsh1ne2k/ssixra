@@ -1,6 +1,6 @@
 # General imports
-from ssixa.base.blockchain import BlockchainAuthMethod
-from ssixa.base.database.metadatadb import MetaDataStoreDB
+from base.blockchain import BlockchainAuthMethod
+from base.database.metadatadb import MetaDataStoreDB
 
 from saml2 import BINDING_HTTP_POST
 from saml2 import BINDING_HTTP_REDIRECT

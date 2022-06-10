@@ -1,5 +1,5 @@
-from ssixa.base.database.basedb import SSIXADBBase
-from ssixa.base.database.oidcdbobject import OIDCUser, OIDCAttribute
+from base.database.basedb import SSIXADBBase
+from base.database.oidcdbobject import OIDCUser, OIDCAttribute
 
 from oic.utils.userinfo import UserInfo
 

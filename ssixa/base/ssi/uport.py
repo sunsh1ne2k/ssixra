@@ -1,8 +1,8 @@
-from ssixa.base.ssi.ssibase import BaseSSI
+from base.ssi.ssibase import BaseSSI
 from oic.oic import rndstr
 from jwt.algorithms import ECAlgorithm
-from ssixa.trust.trust import TMAttribute, TMProvider
-from ssixa.base.ssi.wsconnector import WSConnector
+from trust.trust import TMAttribute, TMProvider
+from base.ssi.wsconnector import WSConnector
 
 import jwt
 import json

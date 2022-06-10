@@ -1,6 +1,6 @@
 from tornado.web import url
 
-from ssixa.handlers.oidc import (
+from handlers.oidc import (
     OIDCAuthorizationHandler,
     OIDCTokenHandler,
     OIDCUserInfoHandler,
@@ -8,12 +8,12 @@ from ssixa.handlers.oidc import (
     OIDCEndSessionHandler,
     OIDCConfigurationHandler,
     OIDCWebfingerHandler)
-from ssixa.handlers.saml import (
+from handlers.saml import (
     SAMLSSOPostHandler,
     SAMLSSORedirectHandler,
     SAMLSLOPostHandler,
     SAMLSLORedirectHandler)
-from ssixa.handlers.oidc_blockchain import (
+from handlers.oidc_blockchain import (
     OIDCBlockchainAuthCreateChallengeHandler,
     OIDCBlockchainAuthVerificationHandler,
     OIDCBlockchainAuthSideChannelVerificationHandler,
@@ -22,21 +22,22 @@ from ssixa.handlers.oidc_blockchain import (
     BlockchainAuthLissiWebhookConnectionTopicHandler,
     BlockchainAuthLissiWebhookPresentationProofTopicHandler,
     BlockchainAuthLissiWebhookOtherTopicHandler)
-from ssixa.handlers.saml_blockchain import (
+from handlers.saml_blockchain import (
     SAMLBlockchainAuthCreateChallengeHandler,
     SAMLBlockchainAuthVerificationHandler,
     SAMLBlockchainAuthSideChannelVerificationHandler,
     SAMLBlockchainAuthStatusVerificationHandler)
-from ssixa.handlers.claims import (
+from handlers.claims import (
     ClaimsHandler,
     VerifyClaimsHandler,
     GetAttestationClaimsHandler,
     ReceiveJolocomCredentialOfferResponseHandler)
-from ssixa.handlers.verification import SimpleEmailVerificationProcessVerificationHandler
+from handlers.verification import SimpleEmailVerificationProcessVerificationHandler
 
 url_patterns = [
     # OIDC provider handlers
-    url(r"/oidc/authorization", OIDCAuthorizationHandler), # -> Dispatcher to different authentication methods
+    # -> Dispatcher to different authentication methods
+    url(r"/oidc/authorization", OIDCAuthorizationHandler),
     url(r"/oidc/token", OIDCTokenHandler),
     url(r"/oidc/userinfo", OIDCUserInfoHandler),
     url(r"/oidc/registration", OIDCRegistrationHandler),
@@ -45,9 +46,12 @@ url_patterns = [
     url(r"/oidc/.well-known/webfinger", OIDCWebfingerHandler),
     # OIDC blockchain auth handlers
     url(r"/oidc/blockchain/challenge", OIDCBlockchainAuthCreateChallengeHandler),
-    url(r"/oidc/blockchain/verification/.*", OIDCBlockchainAuthVerificationHandler),
-    url(r"/oidc/blockchain/verificationside/.*", OIDCBlockchainAuthSideChannelVerificationHandler),
-    url(r"/oidc/blockchain/statusverification/.*", OIDCBlockchainAuthStatusVerificationHandler),
+    url(r"/oidc/blockchain/verification/.*",
+        OIDCBlockchainAuthVerificationHandler),
+    url(r"/oidc/blockchain/verificationside/.*",
+        OIDCBlockchainAuthSideChannelVerificationHandler),
+    url(r"/oidc/blockchain/statusverification/.*",
+        OIDCBlockchainAuthStatusVerificationHandler),
 
     # SAML provider handlers
     # SSO
@@ -62,15 +66,21 @@ url_patterns = [
     url(r"/saml/slo/post/.*", SAMLSLOPostHandler),
     # SAML blockchain auth handlers
     url(r"/saml/blockchain/challenge", SAMLBlockchainAuthCreateChallengeHandler),
-    url(r"/saml/blockchain/verification/.*", SAMLBlockchainAuthVerificationHandler),
-    url(r"/saml/blockchain/verificationside/.*", SAMLBlockchainAuthSideChannelVerificationHandler),
-    url(r"/saml/blockchain/statusverification/.*", SAMLBlockchainAuthStatusVerificationHandler),
+    url(r"/saml/blockchain/verification/.*",
+        SAMLBlockchainAuthVerificationHandler),
+    url(r"/saml/blockchain/verificationside/.*",
+        SAMLBlockchainAuthSideChannelVerificationHandler),
+    url(r"/saml/blockchain/statusverification/.*",
+        SAMLBlockchainAuthStatusVerificationHandler),
 
     # Specific authorization handlers to reflect more complex flow
     url(r"/blockchain/lissi/routing/.*", BlockchainAuthLissiRoutingHandler),
-    url(r"/blockchain/lissi/webhook/topic/connection.*", BlockchainAuthLissiWebhookConnectionTopicHandler),
-    url(r"/blockchain/lissi/webhook/topic/present_proof", BlockchainAuthLissiWebhookPresentationProofTopicHandler),
-    url(r"/blockchain/lissi/webhook/.*", BlockchainAuthLissiWebhookOtherTopicHandler),
+    url(r"/blockchain/lissi/webhook/topic/connection.*",
+        BlockchainAuthLissiWebhookConnectionTopicHandler),
+    url(r"/blockchain/lissi/webhook/topic/present_proof",
+        BlockchainAuthLissiWebhookPresentationProofTopicHandler),
+    url(r"/blockchain/lissi/webhook/.*",
+        BlockchainAuthLissiWebhookOtherTopicHandler),
 
     # Claims management
     # General handlers
@@ -82,7 +92,8 @@ url_patterns = [
 
     # Verification method handlers
     # Email Verification
-    url(r"/verification/email/simpleemail/.*", SimpleEmailVerificationProcessVerificationHandler),
+    url(r"/verification/email/simpleemail/.*",
+        SimpleEmailVerificationProcessVerificationHandler),
 ]
 
 # Extension for non production handlers
